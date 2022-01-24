@@ -13,3 +13,10 @@ contract Contract {
     uint16 public b = 256;
     uint256 public sum = a + b;    
 }
+
+// Signed integers
+contract Contract {
+    int8 public a = 33;
+    int8 public b = -3;
+    int16 public difference = a - b;
+}
