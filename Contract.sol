@@ -20,3 +20,12 @@ contract Contract {
     int8 public b = -3;
     int16 public difference = a - b;
 }
+
+// Bytes
+contract Contract {
+    bytes2 public a = 0xaabb;
+    bytes2 public b = 0xbbcc;
+    bytes2 public cafe = 0xcafe;
+
+}
+
