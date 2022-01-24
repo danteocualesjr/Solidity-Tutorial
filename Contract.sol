@@ -34,3 +34,13 @@ contract Contract {
 	bytes32 public msg1 = "Hello World";
     string public msg2 = "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 }
+
+// Enum
+contract Contract {
+    enum Foods { Apple, Pizza, Bagel, Banana }
+
+	Foods public food1 = Foods.Apple;
+	Foods public food2 = Foods.Pizza;
+	Foods public food3 = Foods.Bagel;
+	Foods public food4 = Foods.Banana;
+}
