@@ -44,3 +44,12 @@ contract Contract {
 	Foods public food3 = Foods.Bagel;
 	Foods public food4 = Foods.Banana;
 }
+
+// Arguments
+contract Contract {
+    uint public x;
+
+    constructor(uint _x) {
+        x = _x;
+    }
+}
