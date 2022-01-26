@@ -49,6 +49,12 @@ contract Contract {
     string public msg2 = "Aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 }
 
+//
+contract Contract {
+    bytes32 public msg3 = "Hello World";
+    string public msg4 = "gmgmgmgmgmgmgmgmgmgmgmgmgmgmgmgmg";
+}
+
 // Enum
 contract Contract {
     enum Foods { Apple, Pizza, Bagel, Banana }
