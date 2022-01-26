@@ -28,6 +28,13 @@ contract Contract {
     int16 public difference = a - b;
 }
 
+//
+contract Contract {
+    int8 public c = 333;
+    int8 public d = 33;
+    int16 public difference = c - d;
+}
+
 // Bytes
 contract Contract {
     bytes2 public a = 0xaabb;
