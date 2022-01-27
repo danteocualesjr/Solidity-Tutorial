@@ -103,3 +103,10 @@ contract Contract {
         return x + y;
     }
 }
+
+// Pure double
+contract Contract {
+    function double(uint x) external pure returns(uint product) {
+        product = x * x;
+    }
+}
