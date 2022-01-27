@@ -107,6 +107,6 @@ contract Contract {
 // Pure double
 contract Contract {
     function double(uint x) external pure returns(uint product) {
-        product = x * x;
+        product = x * 2;
     }
 }
