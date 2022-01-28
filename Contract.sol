@@ -111,6 +111,19 @@ contract Contract {
     }
 }
 
+// Decrement
+contract Contract {
+    uint public z;
+
+    constructor(uint _z) {
+        z = _z;
+    }
+
+    function decrement() external {
+        z -= 1;
+    }
+}
+
 // View addition
 contract Contract {
     uint public x;
