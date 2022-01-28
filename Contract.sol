@@ -71,6 +71,15 @@ contract Contract {
 	Foods public food4 = Foods.Banana;
 }
 
+//
+contract Contract {
+    enum Books { Persuasion, Emma, Mansfield }
+
+	Books public book1 = Books.Persuasion;
+	Books public book2 = Books.Emma;
+	Books public book3 = Books.Mansfield;
+}
+
 // Arguments
 contract Contract {
     uint public x;
