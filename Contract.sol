@@ -170,3 +170,13 @@ contract Game {
 
     }
 }
+
+// Console.log
+import "hardhat/console.sol";
+
+contract Contract {
+	function getSecret(string memory) public view returns(uint) {
+		// TODO: find the secret number and return it! 
+		return 1337;
+	}
+}
