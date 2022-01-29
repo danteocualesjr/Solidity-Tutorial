@@ -154,3 +154,19 @@ library UIntFunctions {
         return x % 2 == 0;
     }    
 }
+
+// Using libraries
+contract Game {
+    using UIntFunctions for uint;
+    uint public participants;
+    bool public allowTeams;
+
+    constructor(uint _participants) {
+        if(_participants.isEven()) {
+            allowTeams = true;
+        }
+
+        participants = _participants;
+
+    }
+}
