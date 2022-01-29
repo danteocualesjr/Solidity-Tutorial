@@ -180,3 +180,10 @@ contract Contract {
 		return 1337;
 	}
 }
+
+// Evenly divides
+library Prime {
+    function dividesEvenly(uint x, uint y) public pure returns(bool) {
+        return (x % y == 0);
+    }    
+}
