@@ -7,6 +7,12 @@ contract Contract {
     bool public b = false;
 }
 
+//
+contract Contract {
+    bool public c = true;
+    bool public d = false;
+}
+
 // Unsigned integers
 contract Contract {
     uint8 public a = 3;
