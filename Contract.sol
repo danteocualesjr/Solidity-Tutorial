@@ -98,6 +98,15 @@ contract Contract {
     }
 }
 
+//
+contract Contract {
+    uint public z;
+
+    constructor(uint _z) {
+        z = _z;
+    }
+}
+
 // Increment
 contract Contract {
     uint public x;
