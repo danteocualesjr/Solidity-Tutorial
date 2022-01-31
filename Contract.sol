@@ -46,6 +46,13 @@ contract Contract {
     uint256 public sum = e + f;
 }
 
+// 
+contract Contract {
+    uint8 public g = 6;
+    uint16 public h = 259;
+    uint256 public sum = g + h;
+}
+
 // Signed integers
 contract Contract {
     int8 public a = 33;
