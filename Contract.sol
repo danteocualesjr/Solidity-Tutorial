@@ -323,3 +323,24 @@ contract Contract {
 		owner.transfer(msg.value);
 	}
 }
+
+// Self-destruct
+contract Contract {
+	address payable public owner;
+	address payable public charity;
+
+	constructor(address payable _charity) {
+		owner = payable(msg.sender);
+		charity = _charity;
+	}
+
+	receive() external payable { }
+
+	function donate() public {
+		selfdestruct(charity);
+	}
+
+	function tip() public payable {
+		owner.transfer(msg.value);
+	}
+}
