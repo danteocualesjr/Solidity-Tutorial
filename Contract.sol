@@ -302,3 +302,24 @@ contract Contract {
 		console.log(success);
 	}
 }
+
+// Charity
+contract Contract {
+	address payable public owner;
+	address payable public charity;
+
+	constructor(address payable _charity) {
+		owner = payable(msg.sender);
+		charity = _charity;
+	}
+
+	receive() external payable { }
+
+	function donate() public {
+		charity.transfer(address(this).balance);
+	}
+
+	function tip() public payable {
+		owner.transfer(msg.value);
+	}
+}
