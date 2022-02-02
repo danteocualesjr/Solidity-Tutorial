@@ -263,3 +263,12 @@ contract Contract {
         owner = msg.sender;
     }
 }
+
+// Address payable
+contract Contract {
+    address payable public owner;
+
+    constructor() public {
+        owner = payable(msg.sender);
+    }
+}
