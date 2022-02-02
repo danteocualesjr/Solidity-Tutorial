@@ -254,3 +254,12 @@ contract PrimeGame {
         return block.number.isPrime();
     }    
 }
+
+// Storing owner
+contract Contract {
+    address public owner;
+
+    constructor() {
+        owner = msg.sender;
+    }
+}
