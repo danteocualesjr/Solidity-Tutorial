@@ -243,3 +243,14 @@ library Prime {
         return true;
     }    
 }
+
+// Next prime
+import "./Prime.sol";
+
+contract PrimeGame {
+    using Prime for uint;
+
+    function isWinner() public view returns(bool)  {
+        return block.number.isPrime();
+    }    
+}
