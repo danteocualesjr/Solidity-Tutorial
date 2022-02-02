@@ -272,3 +272,16 @@ contract Contract {
         owner = payable(msg.sender);
     }
 }
+
+// Receive Ether
+contract Contract {
+    address payable public owner;
+
+    constructor() public {
+        owner = payable(msg.sender);
+    }
+
+    receive() external payable {
+
+    }
+}
