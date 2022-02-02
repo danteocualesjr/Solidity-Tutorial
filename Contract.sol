@@ -285,3 +285,20 @@ contract Contract {
 
     }
 }
+
+// Tip owner
+contract Contract {
+	address payable public owner;
+
+	constructor() {
+		owner = payable(msg.sender);
+	}
+
+	receive() external payable { }
+
+	function tip() public payable {
+		// forwards all remaining gas along 
+		(bool success, ) = owner.call{ value: msg.value }("");
+		console.log(success);
+	}
+}
